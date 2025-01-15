@@ -11,12 +11,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css" media="screen and (min-width: 768px">
 </head>
 
 <body>
     <header>
         <img src="images/myprofile.JPG" alt="my portal image" width="75" height="100">
-        <h1>Thomas Moses</h1>
+        <span>Thomas Moses</span>
     </header>
     <nav>
         <ul>
@@ -41,12 +42,16 @@
         </section>
         <section>
             <h3 class="card">Information</h3>
+            <p>Abuja, Federal Territory, Nigeria</p>
+            <p>33 oC - Sunshine</p>
+            <p>Page Visit: 3</p>
         </section>
     </main>
     <footer>
-        <p>&copy; Thomas Moses |Web Dev Student |2025</p>
-
+        <p>&copy; <span id="year"></span> Thomas Moses |Web Dev Student |2025</p>
+        <p id="lastModified"></p>
     </footer>
+    <script src="scripts/getDates.js"></script>
 </body>
 
 </html>
